@@ -24,6 +24,8 @@ window.expect = chai.expect;
 window.it = it;
 window.sinon = sinon;
 
+require('./unit/BananaTest');
+require('./unit/FruitTest');
 require('./unit/Component/NavMenuComponentTest');
 
 if (typeof mochaPhantomJS !== 'undefined') {
