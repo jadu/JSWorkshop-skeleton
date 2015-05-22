@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NavMenuComponent test</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>NavMenuComponent test</h1>
+
+        <nav class="sidebar-primary__navigation" role="navigation" id="navigation">
+            <ul>
+                <li>
+                    <a href="#" class="main-navigation__toggle expanded-nav-menu-toggle">
+                        <span class="visuallyhidden">Main Menu</span>
+                        <div class="main-navigation__icon-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <div class="expanded-nav-menu">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About Company</a></li>
+                            <li><a href="/media">News &amp; media</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/findabranch">Find a branch</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="expanded-nav-menu-toggle"><i class="company-icon_member"></i><span>My account</span></a>
+                    <div class="expanded-nav-menu">
+                        <ul>
+                            <li><a href="http://company.jadu.net/account/signin">Sign in</a></li>
+                            <li><a href="http://company.jadu.net/register">Register now</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/info/20012/my_employment" class="expanded-nav-menu-toggle">
+                        <i class="company-icon_myemployment"></i>
+                        <span>My employment</span>
+                    </a>
+                    <div class="expanded-nav-menu">
+                        <ul>
+                            <li><a href="/info/20014/in_work">In work</a></li>
+                            <li><a href="/info/20015/looking_for_work">Looking for work</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/info/20013/support_my_employees" class="expanded-nav-menu-toggle">
+                        <i class="company-icon_supportmyemployees"></i>
+                        <span>Support my employees</span>
+                    </a>
+                    <div class="expanded-nav-menu">
+                        <ul>
+                            <li><a href="/info/20140/a_-_z_of_disabilities">A - Z of Disabilities</a></li>
+                            <li><a href="/info/20013/support_my_employees/48/employer_case_studies">Employer case studies</a></li>
+                            <li><a href="/info/20013/support_my_employees/185/fill_my_vacancies">Fill my vacancies</a></li>
+                            <li><a href="/info/20047/improve_my_understanding">Improve my understanding</a></li>
+                            <li><a href="/info/20050/products_and_services">Products and services</a></li>
+                            <li><a href="/info/20013/support_my_employees/134/support_my_disabled_staff">Support my disabled staff</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/info/20024/become_a_partner" class="expanded-nav-menu-toggle">
+                        <i class="company-icon_becomeapartner"></i>
+                        <span>Become a partner</span>
+                    </a>
+                    <div class="expanded-nav-menu">
+                        <ul>
+                            <li><a href="/info/20024/become_a_partner/198/current_opportunities">Current Opportunities</a></li>
+                            <li><a href="/info/20137/partners_and_programmes">Partners and programmes</a></li>
+                            <li><a href="/info/20024/become_a_partner/70/passionate_about_partnerships">Passionate about partnerships</a></li>
+                            <li><a href="/info/20024/become_a_partner/69/products_and_services">Products and services</a></li>
+                            <li><a href="/info/20024/become_a_partner/81/why_work_with_us">Why work with us</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/info/20038/contact_us" class="expanded-nav-menu-toggle">
+                        <i class="company-icon_email"></i>
+                        <span>Contact us</span>
+                    </a>
+                    <div class="expanded-nav-menu">
+                        <ul>
+                            <li><a href="/info/20038/contact_us/201/chat_to_an_advisor">Chat to an advisor</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../dist/index.js"></script>
+
+        <script>
+            new jsWorkshop.NavMenuComponent($('body'), $('#navigation')).initialize();
+        </script>
+    </body>
+</html>
